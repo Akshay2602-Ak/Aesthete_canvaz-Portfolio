@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <!-- ✅ SEO + Meta Tags Start -->
+    <title>Aesthete Canvaz | Handmade Personalized Gifts</title>
+    <meta name="title" content="Aesthete Canvaz | Handmade Personalized Gifts">
+    <meta name="description" content="Discover beautiful handmade gifts like polaroids, scrapbooks, hampers, and more. Personalize each item with love and creativity at Aesthete Canvaz.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aesthetecanvaz.netlify.app/">
+    <meta property="og:title" content="Aesthete Canvaz | Handmade Personalized Gifts">
+    <meta property="og:description" content="Explore our collection of custom gifts, polaroid albums, wallet cards, and scrapbooks crafted with creativity and care.">
+    <meta property="og:image" content="https://yourdomain.com/images/preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aesthetecanvaz.netlify.app/">
+    <meta property="twitter:title" content="Aesthete Canvaz | Handmade Personalized Gifts">
+    <meta property="twitter:description" content="Crafted gifts made with love – order now from Aesthete Canvaz.">
+    <meta property="twitter:image" content="https://yourdomain.com/images/preview.jpg">
+
+    <!-- Mobile Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <!-- ✅ SEO + Meta Tags End -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aesthete Canvaz Portfolio</title>
+    <link rel="icon" href="Aesthete_canvazLogo (1).png" type="image/x-icon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+
+     <!-- ABOUT US SECTION -->
+    <section class="py-12 px-6 bg-pink-50">
+      <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8">
+        <h1 class="text-4xl font-bold text-center text-pink-600 mb-4">Aesthete Canvaz</h1>
+        <p class="text-lg leading-relaxed text-gray-700 mb-4">
+          <span class="font-semibold text-pink-600">At Aesthete Canvaz</span>, we don’t just create gifts – we create memories.
+          Founded with a passion for crafting heartfelt moments, we specialize in
+          <span class="font-semibold text-pink-600">handmade and customized gifts</span> that speak your emotions.
+          From polaroids and wallet cards to elegant hampers and scrapbooks, every product is made with love,
+          creativity, and a personal touch.
+        </p>
+        <p class="text-lg leading-relaxed text-gray-700">
+          Whether you're celebrating love, friendship, birthdays, or big milestones, we’re here to make it
+          unforgettable – one custom creation at a time.
+        </p>
+        <p class="italic text-center text-pink-500 text-xl font-medium mt-6">
+          Made with care. Delivered with love. 💝
+        </p>
+      </div>
+    </section>
+
+
+    <!-- PRODUCT CATEGORIES -->
+    <section id="productCategories" class="py-12 px-6 bg-pink-50">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">🏱 Our Product Categories</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+          <!-- Example Main Card with Subcards -->
+          <div onclick="showSubcategory('polaroidsSub')" class="cursor-pointer bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition">
+            <img src="https://via.placeholder.com/300x200" alt="Polaroids" class="rounded-xl mb-4 w-full h-48 object-cover">
+            <h3 class="text-xl font-semibold text-pink-600">Polaroids</h3>
+            <p class="text-gray-600 text-sm">Vintage-style photo prints with custom text & dates.</p>
+          </div>
+
+          <div onclick="showSubcategory('HandmadeSub')" class="cursor-pointer bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition">
+            <img src="https://via.placeholder.com/300x200" alt="HandmadeCraft" class="rounded-xl mb-4 w-full h-48 object-cover">
+            <h3 class="text-xl font-semibold text-pink-600">Handmade Craft</h3>
+            <p class="text-gray-600 text-sm">Memory books filled with photos & love.</p>
+          </div>
+
+          <div onclick="showSubcategory('hamperSub')" class="cursor-pointer bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition">
+            <img src="https://via.placeholder.com/300x200" alt="Hampers" class="rounded-xl mb-4 w-full h-48 object-cover">
+            <h3 class="text-xl font-semibold text-pink-600">Gift Hampers</h3>
+            <p class="text-gray-600 text-sm">Curated gift boxes with sweet goodies.</p>
+          </div>
+
+          <div onclick="showSubcategory('photoStripSub')" class="cursor-pointer bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition">
+            <img src="https://via.placeholder.com/300x200" alt="Photo Strips" class="rounded-xl mb-4 w-full h-48 object-cover">
+            <h3 class="text-xl font-semibold text-pink-600">Photo Strips</h3>
+            <p class="text-gray-600 text-sm">Vertical strips for gifting cute memories.</p>
+          </div>
+
+          <div onclick="showSubcategory('framesSub')" class="cursor-pointer bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition">
+            <img src="https://via.placeholder.com/300x200" alt="Frames" class="rounded-xl mb-4 w-full h-48 object-cover">
+            <h3 class="text-xl font-semibold text-pink-600">Customized Frames</h3>
+            <p class="text-gray-600 text-sm">Personalized photo & quote frames.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBCATEGORY TEMPLATE SECTION -->
+    <section id="subcategorySection" class="hidden py-12 px-6">
+      <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8 text-center">
+        <h2 id="subcategoryTitle" class="text-3xl font-bold text-pink-600 mb-6">Subcategory</h2>
+        <div id="subcategoryGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+        <button onclick="goBack()" class="mt-6 bg-pink-600 text-white px-4 py-2 rounded-full hover:bg-pink-700">
+          ← Go Back
+        </button>
+      </div>
+    </section>
+
+    <!-- HOW TO ORDER -->
+    <section class="py-12 px-6 bg-pink-50">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">🛒 How to Order</h2>
+        <p class="text-gray-600 text-lg mb-10">Ordering your custom gift is simple! Just follow these 3 steps.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left">
+          <!-- Step 1 -->
+          <div class="bg-pink-100 p-6 rounded-2xl shadow hover:shadow-lg">
+            <h3 class="text-xl font-semibold text-pink-600 mb-2">Step 1: Browse Products</h3>
+            <p class="text-sm text-gray-700">Choose the product you like from our portfolio.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-pink-100 p-6 rounded-2xl shadow hover:shadow-lg">
+            <h3 class="text-xl font-semibold text-pink-600 mb-2">Step 2: Fill the Order Form</h3>
+            <p class="text-sm text-gray-700">Provide your details & customization info through our form.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-pink-100 p-6 rounded-2xl shadow hover:shadow-lg">
+            <h3 class="text-xl font-semibold text-pink-600 mb-2">Step 3: Make Payment</h3>
+            <p class="text-sm text-gray-700">Pay via UPI or bank transfer. Once confirmed, we start crafting!</p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <a href="https://forms.gle/qF4LxDcdt8EZVpbr9" target="_blank"
+             class="inline-block bg-pink-600 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-pink-700 transition">
+            📝 Fill Order Form
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & LINKTREE SECTION -->
+    <section class="py-12 px-6 bg-gray-100">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">📞 Stay Connected</h2>
+        <p class="text-lg text-gray-700 mb-2">Follow us on Instagram:
+          <a href="https://instagram.com/aesthete_canvaz" class="text-pink-600 underline" target="_blank">@aesthete_canvaz</a>
+          
+        </p>
+        <!-- <p class="text-lg text-gray-700 mb-2">Message us on WhatsApp:
+          <a href="https://wa.me/91XXXXXXXXXX" class="text-pink-600 underline" target="_blank">Click to Chat</a>
+        </p> -->
+        <p class="text-lg text-gray-700">View all our links:
+          <a href="https://linktr.ee/aesthetecanvaz" class="text-pink-600 underline" target="_blank">Linktree ↗</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- FLOATING LINKTREE BUTTON -->
+    <a href="https://linktr.ee/aesthetecanvaz" target="_blank"
+       class="fixed bottom-4 right-4 bg-pink-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-pink-700 transition">
+      🔗 Linktree
+    </a>
+
+
+
+    <script>
+      const subcategoryData = {
+        polaroidsSub: ["🎀 Baby Polaroids", "📷 Mini Polaroids", "📷 Medium Polaroid", "📷 Spotify Snapshot", "📷 Memories", "📷 Ring Album"],
+        HandmadeSub: ["Scrap Cards","Scrap Book","Spiral Love Album","Handmade Letter Roll","Vintage Letter Roll","Fortune Bottle Message"],
+        hamperSub: ["🎁 Mini Hampers", "🎉 Festive Hampers", "💑 Couple Hampers"],
+        photoStripSub: ["📷 Single Strip", "📷 Duo Strip", "📷 Strip with Quote"],
+        framesSub: ["🖼️ Photo Frame", "Mini Frame", "🔦 LED Frame","Medium Frame","Collage Frame","Aesthetic Theme frame","Calender Frame","Happy Birthday Frame","Love Theme Frame"]
+      };
+
+      function showSubcategory(id) {
+        const grid = document.getElementById("subcategoryGrid");
+        const title = document.getElementById("subcategoryTitle");
+
+        // Clear grid content
+        grid.innerHTML = "";
+
+        // Set title
+        title.textContent = `Subcategories - ${id.replace("Sub", "")}`;
+
+        // Populate subcards
+        subcategoryData[id].forEach(item => {
+          const div = document.createElement("div");
+          div.className = "bg-pink-50 p-4 rounded-xl shadow text-sm text-gray-800";
+          div.textContent = item;
+          grid.appendChild(div);
+        });
+
+        // Show subcategory section
+        document.getElementById("productCategories").classList.add("hidden");
+        document.getElementById("subcategorySection").classList.remove("hidden");
+      }
+
+      function goBack() {
+        document.getElementById("subcategorySection").classList.add("hidden");
+        document.getElementById("productCategories").classList.remove("hidden");
+      }
+    </script>
+    
+    
+
+  </body>
+</html>
